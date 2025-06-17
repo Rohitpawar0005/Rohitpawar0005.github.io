@@ -1,10 +1,16 @@
+let users = []
+let user = {}
+
 const loginForm = () =>{
     const str = ` <div>
     <h3>Login Form</h3>
-    <input type="email" placeholder="Email"><br><br>
-    <input type="password" placeholder="Password">
-    <p><button onclick='showHome()'>Submit</button></p>
+    <p id="errormsg"></p>
+    <p><input type="email" placeholder="Email" id="email"></p>
+    <input type="password" placeholder="Password" id="pss">
+    <p><button onclick='validateUser()'>Submit</button></p>
     <p><button onclick='registerForm()'>Create Account</button></p>
+    <div> ${showUsers()} </div>
+
     `
     root.innerHTML = str + "</div";
 }
@@ -12,10 +18,10 @@ const loginForm = () =>{
 const registerForm = () =>{
      const str = `<div>
     <h3>Registration Form</h3>
-    <input type="text" placeholder="Name"><br><br>
-    <input type="email" placeholder="Email"><br><br>
-    <input type="password" placeholder="Password">
-    <p><button onclick='loginForm()'>Submit</button></p>
+    <input type="text" placeholder="Name" id="name"><br><br>
+    <input type="email" placeholder="Email" id="email"><br><br>
+    <input type="password" placeholder="Password" id="pss">
+    <p><button onclick='saveUser()'>Submit</button></p>
     <p>Already a member? <button onclick='loginForm()'> Login Here</button></p>
     `
     root.innerHTML = str + "</div";
@@ -27,4 +33,43 @@ const showHome = () =>{
     <p><button onclick='loginForm()'> Logout</button></p>
     `
     root.innerHTML = str + "</div";
+}
+
+const saveUser = () =>{
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pss").value;
+    users.push({
+        name,
+        email,
+        pass
+    });
+    loginForm();
+}
+
+const validateUser = () =>{
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pss").value;
+    const found = users.find(
+        (value) => value.email === email && value.pass === pass
+    );
+    if(found){
+        showHome();
+    }
+    else{
+        document.getElementById("errormsg").innerHTML="Access Denied"
+    }
+}
+
+const showUsers = () =>{
+   let x= "<h4>Registered Users:</h4>";
+    if(users.length==0){
+        return "<p>No Users Registered</p>";
+
+    }
+    users.forEach(user => {
+        x += `<p>${user.name} | ${user.email} | ${user.pass}</p>`;
+    });
+    
+    return x;
 }
