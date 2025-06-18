@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tags</h1>
+    <!-- <form action="serverfile" method="post"> -->
+    <form>
+        <!-- <p><input type="text" required autofocus maxlength="5"></p> -->
+        <!-- <p><input type="text" value="Himadri" readonly disabled size="10px"></p> -->
+        <p><input type="text" placeholder="Name" ></p>
+        <button>Submit</button>
+        <input type="submit" value="Submit">
+        <input type="button" value="Submit">
+        <input type="image" src="button.png">
+    </form>
+
+    <fieldset>
+        <legend><h3>Login Form</h3></legend>
+        <form>
+            <p><input type="email" placeholder="Email Address" required></p>
+            <p><input type="password" placeholder="Password" required></p>
+            <button>Login</button>
+            <p></p>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>Registration Form</h3></legend>
+        <form>
+            <p><input type="text" placeholder="Name" required></p>
+            <p><input type="email" placeholder="Email Address" required></p>
+            <p><input type="password" placeholder="Password" required></p>
+            <p><input type="date"></p>
+            <p>
+                <input type="checkbox">MERN Stack
+                <input type="checkbox">Java Full Stack
+                <input type="checkbox">Python Full Stack
+            </p>
+            <p>
+                <input type="radio" name="batch">Morning Batch
+                <input type="radio" name="batch" checked>Evening Batch
+            </p>
+            <p>
+                <!-- <select multiple> -->
+                <select>
+                    <option>BE</option>
+                    <option selected>B.Tech</option>
+                    <option>MBA</option>
+                </select>
+            </p>
+            <p><input type="file"></p>
+            <p><input type="color"></p>
+            <p><input type="number" placeholder="Age" ></p>
+            <p><textarea  cols="50" rows="4" placeholder="About me"></textarea></p>
+            <p>
+                <select>
+                    <optgroup label="India">
+                        <option>Delhi</option>
+                        <option>Hyderabad</option>
+                        </optgroup>
+                        <optgroup label="USA">
+                        <option>Columbus</option>
+                        <option>Jacksonville</option>
+                        <option>Miami</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p><input type="checkbox" id="c1"><label for="c1">Remember Me</label></p>
+            <p>
+                <input list="country" placeholder="Country">
+                <datalist id="country">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                </datalist>
+            </p>
+            <button>Register</button>
+            <input type="reset">
+        </form>
+    </fieldset>
+</body>
+</html>
