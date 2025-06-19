@@ -1,0 +1,27 @@
+ h1, h3{
+    background-color: antiquewhite;
+    color: blue;
+}
+.class1{
+    background-color: blanchedalmond;
+    color: brown;
+}
+#dvBox{
+    background-color: bisque;
+    color: navy;
+}
+.main{
+    background-color: brown;
+    color: white;
+    }
+.main div{
+    border: 1px solid white;
+}
+.parent{
+    background-color: cadetblue;
+}
+.child{
+    background-color: cornsilk;
+    padding: 20px;
+    margin: 20px;
+}
