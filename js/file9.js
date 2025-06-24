@@ -36,25 +36,25 @@ const showCart = () => {
 };
 showCart();
 
-const increment = (id) => {
-  cart = { ...cart, [id]: cart[id] + 1 };
-};
+// const increment = (id) => {
+//   cart = { ...cart, [id]: cart[id] + 1 };
+// };
 
-const decrement = (id) => {
-  cart = { ...cart, [id]: cart[id] - 1 };
-};
-increment(1);
-showCart();
-increment(1);
-showCart();
-decrement(1);
-showCart();
-decrement(1);
-showCart();
-const orderValue = products.reduce((sum, value) => {
-  return sum + value.price * (cart[value.id] ?? 0);
-}, 0);
-console.log(`Order Value:${orderValue}`);
+// const decrement = (id) => {
+//   cart = { ...cart, [id]: cart[id] - 1 };
+// };
+// increment(1);
+// showCart();
+// increment(1);
+// showCart();
+// decrement(1);
+// showCart();
+// decrement(1);
+// showCart();
+// const orderValue = products.reduce((sum, value) => {
+//   return sum + value.price * (cart[value.id] ?? 0);
+// }, 0);
+// console.log(`Order Value:${orderValue}`);
 
 // function addToCart(id) {
 //   cart = { ...cart, [id]: 1 };
