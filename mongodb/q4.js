@@ -30,3 +30,5 @@ db.employees.find({
 db.employees.find({
   $or: [{ salary: { $gt: 3000 }, department: { $eq: "IT" } }],
 });
+
+db.employees.find({$and: [{salary: {$eq:3000}, department: {$eq: "IT"}}]})
