@@ -16,7 +16,7 @@ const loginForm = () =>{
 }
 
 const registerForm = () =>{
-     const str = `<div>
+     const str = `<div">
     <h3>Registration Form</h3>
     <input type="text" placeholder="Name" id="name"><br><br>
     <input type="email" placeholder="Email" id="email"><br><br>

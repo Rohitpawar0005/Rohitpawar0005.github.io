@@ -1,12 +1,13 @@
 .container{
     display: flex;
     justify-content: center;
+
 }
 
 .container div{
     align-items: center;
     border: 1px solid black;
     margin: 15px;
-    padding: 15px;
+    padding: 40px;
     border-radius: 10px;
 }
