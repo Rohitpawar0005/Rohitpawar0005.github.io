@@ -1,31 +1,38 @@
 let users = []
 let user = {}
 
-const loginForm = () =>{
-    const str = ` <div>
-    <h3>Login Form</h3>
-    <p id="errormsg"></p>
-    <p><input type="email" placeholder="Email" id="email"></p>
-    <input type="password" placeholder="Password" id="pss">
-    <p><button onclick='validateUser()'>Submit</button></p>
-    <p><button onclick='registerForm()'>Create Account</button></p>
-    <div> ${showUsers()} </div>
+const loginForm = () => {
+    const str = `
+    <div class="form-box">
+        <h3>Login Form</h3>
+        <p id="errormsg"></p>
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="pss">
+        <p><button onclick='validateUser()'>Submit</button></p>
+        <p><button onclick='registerForm()'>Create Account</button></p>
+    </div>
+    <div class="users-box">
+        ${showUsers()}
+    </div>`;
+    root.innerHTML = str;
+};
 
-    `
-    root.innerHTML = str + "</div";
-}
+const registerForm = () => {
+    const str = `
+    <div class="form-box">
+        <h3>Registration Form</h3>
+        <input type="text" placeholder="Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="pss">
+        <p><button onclick='saveUser()'>Submit</button></p>
+        <p>Already a member? <button onclick='loginForm()'>Login Here</button></p>
+    </div>
+    <div class="users-box">
+        ${showUsers()}
+    </div>`;
+    root.innerHTML = str;
+};
 
-const registerForm = () =>{
-     const str = `<div">
-    <h3>Registration Form</h3>
-    <input type="text" placeholder="Name" id="name"><br><br>
-    <input type="email" placeholder="Email" id="email"><br><br>
-    <input type="password" placeholder="Password" id="pss">
-    <p><button onclick='saveUser()'>Submit</button></p>
-    <p>Already a member? <button onclick='loginForm()'> Login Here</button></p>
-    `
-    root.innerHTML = str + "</div";
-}
 
 const showHome = () =>{
     const str = ` <div>
@@ -68,7 +75,7 @@ const showUsers = () =>{
 
     }
     users.forEach(user => {
-        x += `<p>${user.name} | ${user.email} | ${user.pass}</p>`;
+        x += `<p>${user.name}</p>`;
     });
     
     return x;
