@@ -3,25 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebD</title>
+    <title>Rohit Pawar - MERN Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Rohit Pawar</h1>
-    <a href="Portfolio/index.html">My Portfolio</a><br><br>
-    <a href="html/index.html">HTML</a><br>
-    <a href="css/index.html">CSS</a><br>
-    <a href="js/index.html">JavaScript</a><br>
-    <h2>My Projects:</h2>
-    <ol>
-        <li><a href="Portfolio/p1/index.html">Project 1</a></li>
-        <li><a href="Portfolio/p2/index.html">Project 2</a></li>
-        <li><a href="Portfolio/ShoppingCart/index.html">ShoppingCart</a></li>
-    </ol>
-    <h2>My Assignments:</h2>
-    <ol>
-        <li><a href="Portfolio/a1/index.html">Assignment 1</a></li>
-        <li><a href="Portfolio/a2/index.html">Assignment 2</a></li>
-    </ol>
+    <nav class="nav">
+        <h2>Rohit Pawar</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main" id="home">
+        <div class="main-content">
+            <h2>MERN Stack Developer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, corrupti! Possimus sequi cum eius obcaecati corporis dicta eaque animi. In error ut ab doloremque dicta aut voluptatem repellat fuga laudantium?</p>
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Projects</button>
+        </div>
+        <img src="istockphoto-174070956-612x612.jpg" alt="Developer Profile">
+    </main>
+    
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="container">
+                <h2>Front-End Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores voluptate quae debitis vero? Nostrum distinctio earum nulla numquam necessitatibus velit architecto debitis, saepe et incidunt ut eveniet voluptatibus officiis?</p>
+            </div>
+            <div class="container">
+                <h2>Back-End Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ea adipisci provident praesentium sint eaque nam quia inventore maiores ut fugiat ipsam reprehenderit sapiente esse voluptate distinctio, in similique neque!</p>
+            </div>
+            <div class="container">
+                <h2>Database Management</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptates dolorum hic reiciendis officiis ex esse, vel assumenda consequatur. Quis sit optio numquam eligendi quod a? Quae unde praesentium obcaecati!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>E-commerce App</h3>
+                <p>Full-stack MERN e-commerce application with user authentication and payment integration.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Blog Platform</h3>
+                <p>Multi-user blog platform with rich text editing and real-time comments.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <h3>React.js</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-card">
+                <h3>MongoDB</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Express.js</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:rohit@example.com">rohit@example.com</a></p>
+            <p>Phone: +91 12345 67890</p>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Rohit Pawar. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
