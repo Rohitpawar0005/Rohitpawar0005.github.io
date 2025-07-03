@@ -1,10 +1,10 @@
 // Introduction to JavaScript
 // console.log("Hello World")
-let age=10;
-let student = "Rohit"
-let promoted = true
-let score
-let city=null
+// let age=10;
+// let student = "Rohit"
+// let promoted = true
+// let score
+// let city=null
 // console.log(student)
 // console.log(typeof student)
 // console.log(typeof score)
@@ -16,8 +16,7 @@ let city=null
 // console.log(typeof rating)
 // let nmRating = Number(rating)
 // console.log(typeof nmRating)
-/*
+
 let flag = "true"
 let boolFlag = Boolean(flag)
 console.log(typeof boolFlag)
-*/
