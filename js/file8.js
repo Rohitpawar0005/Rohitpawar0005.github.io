@@ -1,5 +1,5 @@
 //array methods
-// const points = [2, 5, 3, 2, 1, 8];
+//  const points = [2, 5, 3, 2, 1, 8];
 // const score = [10, 20, 50, 20];
 // console.log(score);
 // console.log(score[0]);
@@ -24,7 +24,7 @@
 // });
 // const points = [2, 5, 3, 2, 1, 8];
 // points.map((value, index) => {
-//   console.log(index);
+//   console.log(value, index);
 // });
 // const points = [2, 5, 3, 2, 1, 8];
 // const newArr = points.map((value, index) => (value += 5));
@@ -34,7 +34,7 @@
 // const newArr = points.filter((value) => value > 2);
 // console.log(newArr);
 
-// const points = [2, 5, 3, 2, 1, 8];
+// const points = [7, 5, 3, 3, 2, 8];
 // const result = points.find((value) => value === 2);
 // console.log(result);
 
@@ -44,6 +44,6 @@
 // }, 0);
 // console.log(result);
 
-const points = [2, 5, 3, 2, 1, 8];
-const newArr = points.map((value) => value > 2);
-console.log(newArr);
+// const points = [2, 5, 3, 2, 1, 8];
+// const newArr = points.map((value) => value > 2);
+// console.log(newArr);

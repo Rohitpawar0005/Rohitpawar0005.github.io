@@ -33,6 +33,6 @@
 // let value = a||10; // if a do not have any value, it will print 10, otherwise print value of a
 // console.log(value)
 
-let a
-let value = a??10; 
-console.log(value)
+// let a=4
+// let value = a??10; // same work
+// console.log(value)
